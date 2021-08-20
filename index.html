@@ -1,12 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Checkout</title>
-</head>
-<body>
-    
-</body>
+    <!-- Bootstrap CSS Link -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="container mt-5">
+        <div class="row g-5">
+          <div class="col-6">
+            <img class="img-fluid" src="images/mac.png" alt="mac-image" />
+          </div>
+          <div class="col-6">
+            <h1>
+              2.3GHz Dual-Core Processor with Turbo Boost up to 3.6GHz 256GB
+              Storage
+            </h1>
+            <p>
+              The all-in-one for all. If you can dream it, you can do it on
+              iMac. It's beautifully designed, incredibly intuitive, and packed
+              with powerful tools that let you take any idea to the next level.
+              And the new 21.5-inch model elevates the experience in every way,
+              with faster processors and graphics, expanded memory and storage,
+              enhanced audio and video capabilities, and an even more stunning
+              Retina 4K display. It's the desktop that does it all — better and
+              faster than ever.
+            </p>
+            <div class="memory-section my-5">
+              <h3>Memory</h3>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic outlined example"
+              >
+                <button type="button" class="btn btn-outline-dark me-2">
+                  8GB Unified Memory
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                  16GB Unified Memory
+                </button>
+              </div>
+            </div>
+            <div class="storage-section my-5">
+              <h3>Storage</h3>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic outlined example"
+              >
+                <button type="button" class="btn btn-outline-dark me-2">
+                  256GB SSD Storage
+                </button>
+                <button type="button" class="btn btn-outline-dark me-2">
+                  512GB SSD Storage
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                  1TB SSD Storage
+                </button>
+              </div>
+            </div>
+            <div class="memory-section my-5">
+              <h3>Choose Delivery Option</h3>
+              <div
+                class="btn-group"
+                role="group"
+                aria-label="Basic outlined example"
+              >
+                <button type="button" class="btn btn-outline-dark me-2">
+                  Friday, AUG 25 Free Delivery
+                </button>
+                <button type="button" class="btn btn-outline-dark">
+                  Monday, AUG 22 Quick Delivery $20
+                </button>
+              </div>
+            </div>
+            <table class="table table-striped">
+              <h2>Checkout</h2>
+              <tbody>
+                <tr class="fw-bold">
+                  <td>Best Price</td>
+                  <td>$1299</td>
+                </tr>
+                <tr class="fw-bold">
+                  <td>Extra Memory Cost</td>
+                  <td>$00</td>
+                </tr>
+                <tr class="fw-bold">
+                  <td>Extra Storage Cost</td>
+                  <td>$00</td>
+                </tr>
+                <tr class="fw-bold">
+                  <td>Delivery Cost</td>
+                  <td>$00</td>
+                </tr>
+              </tbody>
+              <tfoot class="fw-bold">
+                <td>Total Price</td>
+                <td>$1299</td>
+              </tfoot>
+            </table>
+            <h4>Use Promo Code</h4>
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Enter your code"
+              />
+              <button class="btn btn-danger" type="button" id="button-addon2">
+                Button
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <hr />
+        <h1 class="text-center">Total: $1219</h1>
+      </footer>
+    </main>
+  </body>
 </html>
