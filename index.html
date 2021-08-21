@@ -139,12 +139,13 @@
             <h4>Use Promo Code</h4>
             <div class="input-group mb-3">
               <input
+                id="coupon-code"
                 type="text"
                 class="form-control"
                 placeholder="Enter your code"
               />
-              <button class="btn btn-danger" type="button" id="button-addon2">
-                Button
+              <button id="coupon-btn" class="btn btn-danger" type="button" id="button-addon2">
+                Apply
               </button>
             </div>
           </div>
@@ -153,7 +154,7 @@
     </main>
     <footer>
       <hr />
-      <h1 class="text-center">Total: $1219</h1>
+      <h1 class="text-center">Total: $<span id="grand-total">1299</span></h1>
     </footer>
     <script src="js/script.js"></script>
   </body>

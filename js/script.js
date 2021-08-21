@@ -16,6 +16,9 @@ function updateTotalCost() {
   );
   const totalCost = 1299 + ramPrice + ssdPrice + deliveryPrice;
   document.getElementById("total-cost").innerText = totalCost;
+
+  //Update grand total
+  document.getElementById("grand-total").innerText = totalCost;
 }
 //Ram Price Update
 document.getElementById("ram-8gb-btn").addEventListener("click", function () {
@@ -61,3 +64,16 @@ document
     updateVariant("delivery-cost", 20);
     updateTotalCost();
   });
+
+//Coupon Offer Update
+document.getElementById("coupon-btn").addEventListener("click", function () {
+  const previousTotalCost = document.getElementById("total-cost").innerText;
+  const coupon = document.getElementById("coupon-code");
+  const couponCode = coupon.value;
+  if (couponCode == "stevekaku") {
+    document.getElementById("grand-total").innerText =
+      previousTotalCost - previousTotalCost * 0.2;
+  } else {
+    coupon.value = "";
+  }
+});
