@@ -42,10 +42,18 @@
                 role="group"
                 aria-label="Basic outlined example"
               >
-                <button type="button" class="btn btn-outline-dark me-2">
+                <button
+                  id="ram-8gb-btn"
+                  type="button"
+                  class="btn btn-outline-dark me-2"
+                >
                   8GB Unified Memory
                 </button>
-                <button type="button" class="btn btn-outline-dark">
+                <button
+                  id="ram-16gb-btn"
+                  type="button"
+                  class="btn btn-outline-dark"
+                >
                   16GB Unified Memory
                 </button>
               </div>
@@ -57,28 +65,48 @@
                 role="group"
                 aria-label="Basic outlined example"
               >
-                <button type="button" class="btn btn-outline-dark me-2">
+                <button
+                  id="storage-256gb-btn"
+                  type="button"
+                  class="btn btn-outline-dark me-2"
+                >
                   256GB SSD Storage
                 </button>
-                <button type="button" class="btn btn-outline-dark me-2">
+                <button
+                  id="storage-512gb-btn"
+                  type="button"
+                  class="btn btn-outline-dark me-2"
+                >
                   512GB SSD Storage
                 </button>
-                <button type="button" class="btn btn-outline-dark">
+                <button
+                  id="storage-1tb-btn"
+                  type="button"
+                  class="btn btn-outline-dark"
+                >
                   1TB SSD Storage
                 </button>
               </div>
             </div>
-            <div class="memory-section my-5">
+            <div class="delivery-section my-5">
               <h3>Choose Delivery Option</h3>
               <div
                 class="btn-group"
                 role="group"
                 aria-label="Basic outlined example"
               >
-                <button type="button" class="btn btn-outline-dark me-2">
+                <button
+                  id="free-delivery-btn"
+                  type="button"
+                  class="btn btn-outline-dark me-2"
+                >
                   Friday, AUG 25 Free Delivery
                 </button>
-                <button type="button" class="btn btn-outline-dark">
+                <button
+                  id="paid-delivery-btn"
+                  type="button"
+                  class="btn btn-outline-dark"
+                >
                   Monday, AUG 22 Quick Delivery $20
                 </button>
               </div>
@@ -88,24 +116,24 @@
               <tbody>
                 <tr class="fw-bold">
                   <td>Best Price</td>
-                  <td>$1299</td>
+                  <td>$ <span id="base-price">1299</span></td>
                 </tr>
                 <tr class="fw-bold">
                   <td>Extra Memory Cost</td>
-                  <td>$00</td>
+                  <td>$ <span id="memory-cost">0</span></td>
                 </tr>
                 <tr class="fw-bold">
                   <td>Extra Storage Cost</td>
-                  <td>$00</td>
+                  <td>$ <span id="storage-cost">0</span></td>
                 </tr>
                 <tr class="fw-bold">
                   <td>Delivery Cost</td>
-                  <td>$00</td>
+                  <td>$ <span id="delivery-cost">0</span></td>
                 </tr>
               </tbody>
               <tfoot class="fw-bold">
                 <td>Total Price</td>
-                <td>$1299</td>
+                <td>$ <span id="total-cost">1299</span></td>
               </tfoot>
             </table>
             <h4>Use Promo Code</h4>
@@ -122,10 +150,11 @@
           </div>
         </div>
       </section>
-      <footer>
-        <hr />
-        <h1 class="text-center">Total: $1219</h1>
-      </footer>
     </main>
+    <footer>
+      <hr />
+      <h1 class="text-center">Total: $1219</h1>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
